@@ -137,9 +137,7 @@
 						<include content="OSDButton">
 							<param name="texture" value="osd/fullscreen/buttons/channels.png"/>
 						</include>
-						<onclick>Dialog.Close(VideoOSD)</onclick>
-						<onclick>ActivateWindow(PVROSDChannels)</onclick>
-						<visible>VideoPlayer.Content(livetv)</visible>
+						<onclick>RunScript(plugin.program.playusing)</onclick>
 					</control>
 					<control type="radiobutton" id="70041">
 						<include content="OSDButton">
